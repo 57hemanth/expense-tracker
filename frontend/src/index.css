@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #f9b266, #f68428);
+    font-family: 'Poppins', sans-serif;
+    padding: 0 16px;
+}
+
+.container {
+    background-color: #eee;
+    max-width: 560px;
+    margin: 64px auto;
+    border-radius: 8px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Balance */
+.balance {
+    text-align: center;
+}
+
+.balance-amt {
+    font-size: 42px;
+}
+
+/* Form */
+
+.new-transcation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.add-name-date {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px 8px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 1px solid #f68428;
+    border-radius: 4px;
+    color: #f68428;
+    font-size: 16px;
+}
+
+/* Transcation */
+
+.transcation {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d1d1d1;
+    padding: 12px 0;
+}
+
+.transcation:first-child {
+    border-top: none;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #8b8b8b;
+}
+
+.price {
+    font-size: 18px;
+    text-align: right;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.green {
+    color: #01db01;
+}
+
+.date-time {
+    font-size: 14px;
+    color: #8b8b8b;
+    text-align: right;
+}
+
+@media only screen and (max-width: 420px){
+    .add-name-date {
+        flex-wrap: wrap;
+    }
+}
